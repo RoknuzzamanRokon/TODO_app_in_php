@@ -88,7 +88,7 @@
     include 'config.php';
     $rowData = mysqli_query($con, "SELECT * from todo_list_table");
 
- 
+
     ?>
 
     <div class="container">
@@ -100,9 +100,11 @@
                     while ($row = $rowData->fetch_assoc()) {
                     ?>
                         <tr>
-                            <td><?php echo $row['list']?></td>
-                            <td style="width: 10%;"><a href="" class="btn btn-outline-success">Update</a></td>
-                            <td style="width: 10%;"><a href="" class="btn btn-outline-danger">Delete</a></td>
+                            <td><?php echo $row['id'] ?></td>
+                            <td><?php echo $row['list'] ?></td>
+                            <td style="width: 10%;"><a href="update.php? ID=<?php echo $row['id'] ?>" class="btn btn-outline-success">Update</a></td>
+
+                            <td style="width: 10%;"><a href="delete.php? ID= <?php echo $row['id'] ?>" class="btn btn-outline-danger">Delete</a></td>
                         </tr>
 
                     <?php

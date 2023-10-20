@@ -83,12 +83,11 @@
         </div>
     </div>
 
+
     <!-- get data -->
     <?php
     include 'config.php';
     $rowData = mysqli_query($con, "SELECT * from todo_list_table");
-
-
     ?>
 
     <div class="container">

@@ -70,7 +70,7 @@
 <body>
     <div class="card">
         <div>
-            <h1>Tudo List</h1>
+            <h1>TODO List</h1>
         </div>
 
         <div>

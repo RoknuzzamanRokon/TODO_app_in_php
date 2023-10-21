@@ -14,14 +14,14 @@
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">
                 <h2 class="text-center">User Login</h2>
-                <form>
+                <form action="login_confirm.php", method="POST">
                     <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Login</button>
                 </form>

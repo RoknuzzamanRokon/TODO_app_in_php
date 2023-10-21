@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-
 <body>
     <div class="container">
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">
                 <h2 class="text-center">User Login</h2>
-                <form action="login_confirm.php" , method="POST">
+                <form action="login_confirm.php" method="POST">
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
@@ -24,12 +23,18 @@
                         <label for="password">Password</label>
                         <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
                     </div>
-
-
                     <button type="submit" class="btn btn-primary btn-block">Login</button>
-                    <label for="register">I am new User.<a href="registration.php">register</a></label>
+                    <label for="register">I am a new User. <a href="registration.php">Register</a></label>
+
                     <label for="forget_password">I remember my password.<a href="forget_password.php">forget password</a></label>
                 </form>
+
+                <!-- Error message container -->
+                <?php
+                if (isset($_GET['error']) && $_GET['error'] === 'login_failed') {
+                    echo '<div class="alert alert-danger mt-2" role="alert">Incorrect email or password. Please try again.</div>';
+                }
+                ?>
             </div>
         </div>
     </div>

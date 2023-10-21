@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-
 <body>
     <div class="container">
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">
-                <h2 class="text-center">User Login</h2>
-                <form action="login_confirm.php" , method="POST">
+                <h2 class="text-center">Forget Password</h2>
+                <form action="forget_pass_view.php" , method="POST">
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter your Username">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                        <label for="password_1">Password</label>
+                        <input type="password_1" class="form-control" id="password_1" name="password_1" placeholder="Enter your password">
                     </div>
-
-
-                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <div class="form-group">
+                        <label for="password_2">Confirm Password</label>
+                        <input type="password_2" class="form-control" id="password_2" name="password_2" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm</button>
                     <label for="register">I am new User.<a href="registration.php">register</a></label>
-                    <label for="forget_password">I remember my password.<a href="forget_password.php">forget password</a></label>
                 </form>
             </div>
         </div>

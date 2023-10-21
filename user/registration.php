@@ -33,9 +33,11 @@
 
                     <div class="form-group">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" class="form-control" id="confirmPassword" name ="confirmPassword" placeholder="Confirm your password">
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
+
+                    <label for="forget_password">I have already an account.<a href="login.php">Login</a></label>
                 </form>
             </div>
         </div>

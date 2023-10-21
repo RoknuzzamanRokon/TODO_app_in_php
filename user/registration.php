@@ -14,22 +14,26 @@
         <div class="row justify-content-center mt-5">
             <div class="col-md-6">
                 <h2 class="text-center">User Registration</h2>
-                <form>
+
+                <form action='insert.php' method='POST'>
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
                     </div>
+
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
                     </div>
+
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter a password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password">
                     </div>
+
                     <div class="form-group">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                        <input type="password" class="form-control" id="confirmPassword" name ="confirmPassword" placeholder="Confirm your password">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
                 </form>
